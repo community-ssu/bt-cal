@@ -1,0 +1,11 @@
+description "bt-cal"
+
+start on TEST
+start on LOCAL
+
+pre-start script
+        modprobe hci_h4p||true
+end script
+
+exec /usr/sbin/bt-cal
+

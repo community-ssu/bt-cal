@@ -1,0 +1,13 @@
+Source: bt-cal
+Section: unknown
+Priority: extra
+Maintainer: Jonathan Wilson <jfwfreo@tpgi.com.au>
+Build-Depends: debhelper (>= 5), libcal-dev
+Standards-Version: 3.7.2
+
+Package: bt-cal
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends} libcal1
+Conflicts: bluetooth-sysinfo
+Replaces: bluetooth-sysinfo
+Description: Clone of Nokia bluetooth-sysinfo that reads directly from CAL and doesn't use sysinfo stuff
